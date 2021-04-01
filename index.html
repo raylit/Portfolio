@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WEB DESIGNER JSH</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="full-page-scroll.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://raylit.github.io/Portfolio/">
+	<meta property="og:image" content="meta.jpg">
+	<meta property="og:title" content="WEB DESIGNER JSH">
+	<meta property="og:description" content="WEB DESIGNER JSH Portfolio">
+	<style type="text/css">
+	.notoK { font-family: 'Noto Sans KR', sans-serif; }
+	.roboto { font-family: 'Roboto', sans-serif; }
+	.robotoS { font-family: 'Roboto Slab', serif; }
+	.white { color: white; }
+	.bold { font-weight: 700; }
+	.center { text-align: center; }
+
+	.section1 {
+		background-color: #000000;
+	}
+
+	.section2 {
+		background-color: #000000; 
+	}
+
+	.section3 {
+		background-color:  #000000;
+	}
+
+	.section4 {
+		background-color:  #000000;
+	}
+
+	.section5 {
+		background-color:  #000000;
+	}
+
+	span {
+		font-size: 4em;
+		font-style: normal;
+		color: #fff;
+	}
+
+	header { 
+		position: fixed;
+		width: 100%;
+		height: 60px;
+		background: black;
+		z-index: 2;
+		top: 0;
+		transition: 0.4s;
+	}
+	nav { 
+		position: fixed;
+		left: calc(50% - 600px);
+		width: 1200px;
+		height: 60px;
+		float: left;
+	}
+	.mymenu{
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;	
+		position: relative;
+		width: 1200px;
+		height: 60px;
+		float: left;
+		text-align: center;
+		margin: 0 15px;
+	}
+	.mya{
+		position: relative;
+		width: 1200px;
+		color: #dddddd;
+		text-decoration: none;
+		line-height: 60px;
+		display: block;
+	}
+
+	a {
+		color: #dddddd;
+		text-decoration: none;
+	}
+	article {
+		position: relative;
+		margin: auto;
+		width: 1200px;
+		height: 100%;
+		padding-top: 120px;
+	}
+
+	footer {
+		position: fixed;
+		width: 100%;
+		height: 240px;
+		bottom: 0px;
+		background: linear-gradient(#1c1c1c, black);
+		z-index: 1;
+		transition: 0.4s;
+	}
+	#footart {
+		padding-top: 30px;
+	}
+	h2{
+		color: #dddddd;
+		font-size: 1em;
+		line-height: 1.2em;
+		font-weight: bold;
+	}	
+
+	p{
+		color: #dddddd;
+		font-size: 1em;
+		line-height: 1.6em;
+	}
+
+	img {
+		position: relative;
+	}
+
+	.full {
+		width: 1920px;
+		height: 100%;
+		overflow: hidden;
+		position: absolute;
+		left: calc(50% - 960px);
+		top: 60px;
+	}
+	.full2 {
+		width: 100vw;
+		overflow: hidden;
+		position: absolute;
+	}
+	#face{
+		position: relative;
+		background: #131426;
+		width: 284px;
+		height: 284px;
+		border: 18px solid #ffffff;
+		margin: 0 30px;
+		float: left;
+		transition: 0.2s;
+		cursor: pointer;
+	}
+
+	#title{
+		position: relative;
+		color: white;
+		font-size: 6.9em;
+		font-weight: 700;
+		float: left;
+		margin-top: 90px;
+		line-height: 1.1em;
+	}
+	#hello{
+		position: relative;
+		margin-top: 350px;
+		margin-left: 385px;
+		line-height: 1.7em;
+		color: #eeeeee;
+
+	}
+
+	.box1{
+		position: relative;
+		width: 320px;
+		margin: 0 30px;		
+		text-align: left;
+		float: left;
+	}
+	.box2 {
+		position: relative;
+		width: 1200px;
+		height: 170px;		
+		text-align: left;
+	}
+
+	#skills{
+		position: relative;
+		width: 780px;
+		float: left;
+	}
+	.skill {
+		width: 120px;
+		height: 240px;
+		margin: 0 5px 20px 5px;
+		float: left;
+	}
+	.pfbox {
+		border: 2.5px solid #dddddd;
+		width: 270px;
+		height: 151px;
+		background: black;
+		margin: 5px 5px;
+		float: left;
+		cursor: pointer;
+		transition: 0.2s;
+		overflow: hidden;
+	}
+	.pfimg {
+		position: fixed;
+		width: 270px;
+		opacity: 0.8;
+		transition: 0.2s;
+	}
+	.pfimgText{
+		position: relative;
+		margin: 65px 45px;
+	}
+
+	#webHead{
+		position: absolute;
+		top: 360px ;
+		margin: 30px;
+	}
+
+	#webTitle{
+		position: absolute;
+		width: 1200px;
+		font-size: 5.5em;
+		font-weight: 500;
+		color: white;
+		line-height: 1.3em;
+	}
+	#decoBox{
+		width: 1200px;
+		height: 24px;
+	}
+	.deco{
+		position: relative;
+		width: 3px;
+		height: 3px;
+		border: 2.5px solid #dddddd;
+		margin: 0px 5px;
+		float: left;
+	}
+
+	#pfdownload{
+		display: block;
+		width: 1200px;
+		height: 480px;
+		text-align: center;
+	}
+	#pfdownloadText{
+		padding-top: 120px;
+		font-weight: 500;
+		font-size: 8.7em;
+		color: white;
+	}
+	#pfdownloadText2{
+		font-size: 1.2em;
+		text-decoration: underline;
+		color: #cccccc;
+
+	}
+	#bye{
+		width: 1200px;
+		text-align: center;
+		font-weight: 500;
+		font-size: 8.7em;
+		color: #eeeeee;
+		line-height: 480px;
+	}
+
+
+	</style>	
+</head>
+<body>
+	<header id="head">
+		<nav>
+			<ul>
+				<li class="mymenu">
+					<a class="mya" href="#0">HOME</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<div id="main" class="scroll-container">
+		<section class="section1">
+			<div class="full">
+				<img src="mainreal.jpg">
+			</div>
+			<article id="art1">
+				<div id="face">
+				</div>
+				<h1 id="title" class="roboto">
+					WEB DESIGNER<br>
+					PORTFOLIO
+				</h1>
+				<p id="hello" class="notoK">
+					웹디자인과 BX에 관심이 많은 젊은이입니다. 학교생활 대부분을 교내 록 밴드 동아리에서<br> 베이시스트이자, 밴드의 경험 디자이너로 활동했습니다. 대학 초기에는 편집디자인,<br>그래픽디자인 등 평면 조형에 관심이 많았습니다. 재학 중 UX/UI 공부를 통해 사용자에 대한<br> 이해를 넓힐 수 있었고, HTML/CSS, Javascript에 대한 학습을 통해 자연스럽게 웹 환경을<br> 활용할 수 있게 되어 보다 다양한 도구를 활용해 작업을 이어갔습니다.<br>
+				</p>
+			</article>		
+		</section>
+		<section class="section2">
+			<article id="art2">
+			<div class="box1">
+				<h2>SKILLS<br><br>
+				</h2>
+				<p class="notoK">
+					Illustrator, Indesign 능한 편입니다.<br>
+					Photoshop은 평범합니다.<br>
+					기초적인 HTML, CSS, Js 활용 가능하며<br>
+					취미이자 특기는 베이스 연주입니다.
+				</p>
+			</div>
+			<div id="skills">
+				<div class="skill">
+					<img src="skills_ai.png">
+				</div>
+				<div class="skill">
+					<img src="skills2_id.png">
+				</div>
+				<div class="skill">
+					<img src="skills3_ps.png">
+				</div>
+				<div class="skill">
+					<img src="skills4_html.png">
+				</div>
+				<div class="skill">
+					<img src="skills5_js.png">
+				</div>
+				<div class="skill">
+					<img src="skills6_rock.png">
+				</div>
+			</div>
+			</article>
+		</section>
+		<section class="section3" id="webSection">
+			<article>
+			<div class="box1">
+			<h2>
+				<a id="pfHref" href="index.html">&nbsp;WEB</a><br>
+				<br>
+			</h2>
+				<div class="box2">
+					<div class="pfbox" id="rave1">
+						<img class="pfimg" src="portfolio210401.jpg">
+						<div class="pfimgText">
+							<p id="raveText1" class="notoK white bold center">
+							2021</p>
+						</div>
+					</div>
+					<div class="pfbox" id="rave2">
+						<img class="pfimg" src="portfolio11285.jpg">
+						<div class="pfimgText">
+							<p id="raveText2" class="notoK white bold center">
+							2019</p>
+						</div>
+					</div>
+					<div class="pfbox" id="rave3">
+						<img class="pfimg" src="portfolio11288.jpg">
+						<div class="pfimgText">
+							<p id="raveText3" class="notoK white bold center">
+							2018</p>
+						</div>
+					</div>
+					<div class="pfbox" id="rave4">
+						<img class="pfimg" src="portfolio112811.jpg">
+						<div class="pfimgText">
+							<p id="raveText4" class="notoK white bold center">
+							2018</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="webHead">
+				<div id="decoBox">
+					<div id="deco1" class="deco"></div>
+					<div id="deco2" class="deco"></div>
+					<div id="deco3" class="deco"></div>
+					<div id="deco4" class="deco"></div>
+				</div>
+				<h1 id="webTitle" class="roboto">
+					
+				</h1>
+			</div>
+			</article>
+		</section>
+		<section class="section4">
+			<div class="full2">
+				<img src="nonweb.png">
+			</div>
+			<article>
+				<div>
+					<a id="pfdownload" class="roboto" href="portfolio2021.pdf" target="blank" download>
+						<p id="pfdownloadText">NON-WEB WORKS</p>
+						<p id="pfdownloadText2">Download JSH Portfolio.pdf</p>
+					</a>
+
+				</div>
+			</article>
+		</section>
+		<section class="section5">
+			<article>
+				<div>
+					<h1 id="bye" class="roboto">THANK YOU</h1>
+				</div>
+			</article>
+		</section>
+	</div>
+	<footer id="foot">
+		<article id="footart">
+			<div class="box1">
+				<h2 class="white">
+					장성훈 JSH<br><br>
+				</h2>
+				<p class="notoK">
+					1995. 10. 8<br>
+					2020 국립한경대학교 디자인학과 졸업<br>
+					<br>
+					+82 10 3912 5878<br>
+					faith100895@gmail.com<br>
+				</p>
+			</div>
+		</article>
+	</footer>
+	<script src="full-page-scroll.js"></script>
+	<script type="text/javascript">
+		new fullScroll({
+			displayDots: true,
+			dotsPosition: 'left',
+			animateTime: 0.7,
+			animateFunction: 'ease'
+		});
+		face.onmouseover = function(){
+			face.style.background = "none";
+			}
+		face.onmouseout = function(){
+			face.style.background = "#131426";
+		}
+
+		var toggle = "off";
+
+		var pfboxx = document.getElementsByClassName("pfbox");
+		var pfimgg = document.getElementsByClassName("pfimg");
+		var centre = document.getElementsByClassName("center");
+
+		function ravechrono(){
+
+			toggle = "off";
+			toggler();
+			document.getElementById("webTitle").innerHTML = "";
+
+			head.style.top = "0";
+			foot.style.bottom = "0";
+
+			rave1.style.width = "275px";
+			rave1.style.height = "155px";
+
+			pfHref.setAttribute('href', " ")
+			document.getElementById("pfHref").innerHTML = "&nbsp;WEB";
+
+			document.getElementById("raveText1").innerHTML = "2021";
+			document.getElementById("raveText2").innerHTML = "2019";
+			document.getElementById("raveText3").innerHTML = "2018";
+			document.getElementById("raveText4").innerHTML = "2018";
+
+			for (var i=0;i<centre.length;i++){
+					centre[i].style.textAlign = "center";
+				}
+
+			for (var i=0;i<pfboxx.length;i++){
+					pfboxx[i].style.width = 270 + "px";
+					pfboxx[i].style.height = 151 + "px";
+				}
+			for (var i=0;i<pfimgg.length;i++){
+					pfimgg[i].style.width = 270 + "px";
+					pfimgg[i].style.height = 151 + "px";
+					pfimgg[i].style.opacity = "0.8";
+				}
+			for (var i=0;i<decoes.length;i++){
+					decoes[i].style.background = "black";
+				}
+		}
+		
+
+		rave1.onclick = function(){
+
+			ravechrono();
+			toggle = "on";
+			toggler();
+
+			head.style.top = "-60px";
+			foot.style.bottom = "-210px";
+
+			rave1.style.width = "1120px";
+			rave1.style.height = "630px";
+			pfimgg[0].style.width = "1120px";
+			pfimgg[0].style.height = "630px";
+			pfimgg[0].style.opacity = "0.4";
+			raveText1.style.textAlign = "left";
+			pfHref.setAttribute('href', "https://raylit.github.io/HoennPlayer/")
+			document.getElementById("pfHref").innerHTML = "&nbsp;https://raylit.github.io/HoennPlayer/";
+
+			document.getElementById("raveText1").innerHTML = "포켓몬스터 시리즈 3세대 게임, 루비·사파이어·에메랄드의 BGM을<br>들어볼 수 있는 웹사이트입니다. 포켓몬 도감과 호연지방의 지도를 활용한<br>그래픽으로 원작의 느낌을 충실히 재현했습니다. <br><br>각 지역별 간단한 도시 설명과 함께 재생되는 BGM은 제가 직접 녹음하고<br>출연한 동영상과 함께 재생됩니다. 일부 베이스가 희미해 촬영하지 않은<br>BGM은 게임 속 오리지널 BGM이 재생됩니다.";
+
+			for (var i=1;i<pfboxx.length;i++){
+					pfboxx[i].style.width = 3 + "px";
+					pfboxx[i].style.height = 3 + "px";
+				}
+			for (var i=1;i<pfimgg.length;i++){
+					pfimgg[i].style.width = 0 + "px";
+					pfimgg[i].style.height = 0 + "px";
+				}
+		}
+
+		rave2.onclick = function(){
+
+			ravechrono();
+			toggle = "on";
+			toggler();
+
+			head.style.top = "-60px";
+			foot.style.bottom = "-210px";
+
+			for (var i=2;i<pfboxx.length;i++){
+					pfboxx[i].style.width = 3 + "px";
+					pfboxx[i].style.height = 3 + "px";
+				}
+			for (var i=2;i<pfimgg.length;i++){
+					pfimgg[i].style.width = 0 + "px";
+					pfimgg[i].style.height = 0 + "px";
+				}
+			pfboxx[0].style.width = 3 + "px";
+			pfboxx[0].style.height = 3 + "px";
+			pfimgg[0].style.width = 0 + "px";
+			pfimgg[0].style.height = 0 + "px";
+
+			rave2.style.width = "1120px";
+			rave2.style.height = "630px";
+			pfimgg[1].style.width = "1120px";
+			pfimgg[1].style.height = "630px";
+			pfimgg[1].style.opacity = "0.4";
+			raveText2.style.textAlign = "left";
+			pfHref.setAttribute('href', "https://raylit.github.io/bxDesignerAlsoBassist/index.html")
+			document.getElementById("pfHref").innerHTML = "&nbsp;https://raylit.github.io/bxDesignerAlsoBassist/index.html";
+
+			document.getElementById("raveText2").innerHTML = "대학 생활의 대부분을 교내 록 밴드 동아리 카인에서 베이시스트이자<br>디자이너로 활동했던 디자인학과 학생 장성훈이 밴드 카인의 시각<br>이미지를 개선했던 작업과 베이시스트로 공연에 참여했던 활동들을 모아<br>보여주는 포트폴리오 형태의 웹사이트입니다.<br><br>수년간 디자인되지 않은 밴드의 시각 정체성에 체계적 개선이 필요하다고<br>느끼게 되어, 대략 1년 정도의 기간을 들여 아이덴티티 작업을<br>진행했습니다.<br><br>더불어 다년간 밴드의 베이스 세션으로 공연에 참여했던 활동들을 모아<br>저의 음악적 능력 또한 어필하려 했습니다.";
+		}
+
+		rave3.onclick = function(){
+
+			ravechrono();
+			toggle = "on";
+			toggler();
+
+			head.style.top = "-60px";
+			foot.style.bottom = "-210px";
+
+			for (var i=3;i<pfboxx.length;i++){
+					pfboxx[i].style.width = 3 + "px";
+					pfboxx[i].style.height = 3 + "px";
+				}
+			for (var i=3;i<pfimgg.length;i++){
+					pfimgg[i].style.width = 0 + "px";
+					pfimgg[i].style.height = 0 + "px";
+				}
+			pfboxx[0].style.width = 3 + "px";
+			pfboxx[0].style.height = 3 + "px";
+			pfimgg[0].style.width = 0 + "px";
+			pfimgg[0].style.height = 0 + "px";
+			pfboxx[1].style.width = 3 + "px";
+			pfboxx[1].style.height = 3 + "px";
+			pfimgg[1].style.width = 0 + "px";
+			pfimgg[1].style.height = 0 + "px";
+
+			rave3.style.width = "1120px";
+			rave3.style.height = "630px";
+			pfimgg[2].style.width = "1120px";
+			pfimgg[2].style.height = "630px";
+			pfimgg[2].style.opacity = "0.4";
+			raveText3.style.textAlign = "left";
+			pfHref.setAttribute('href', "https://raylit.github.io/muse8th")
+			document.getElementById("pfHref").innerHTML = "&nbsp;https://raylit.github.io/muse8th";
+
+			document.getElementById("raveText3").innerHTML = "2018년 11월 9일 발매한 영국의 얼터너티브 록 밴드, 뮤즈의 새 앨범의<br>수록곡과 키 비주얼, 뮤직비디오를 들어볼 수 있는 웹사이트입니다.<br>작업 당시에는 아직 발매 전인 상태여서 선행 공개된 5개 곡의 뮤직비디오만<br>감상할 수 있습니다.";
+		}
+
+		rave4.onclick = function(){
+
+			ravechrono();
+			toggle = "on";
+			toggler();
+
+			head.style.top = "-60px";
+			foot.style.bottom = "-210px";
+
+			for (var i=0;i<4;i++){
+					pfboxx[i].style.width = 3 + "px";
+					pfboxx[i].style.height = 3 + "px";
+				}
+			for (var i=0;i<4;i++){
+					pfimgg[i].style.width = 0 + "px";
+					pfimgg[i].style.height = 0 + "px";
+				}
+
+			rave4.style.width = "1120px";
+			rave4.style.height = "630px";
+			pfimgg[3].style.width = "1120px";
+			pfimgg[3].style.height = "630px";
+			pfimgg[3].style.opacity = "0.4";
+			raveText4.style.textAlign = "left";
+			pfHref.setAttribute('href', "https://raylit.github.io/K-ROCKK")
+			document.getElementById("pfHref").innerHTML = "&nbsp;https://raylit.github.io/K-ROCKK";
+
+			document.getElementById("raveText4").innerHTML = "21세기에 데뷔한 밴드 중 국내 록 음악 시장 발전에 기여하고 있는<br>현재 활동 중인 62개의 록 밴드들을 엄선해 모아 그들의 앨범 아트와<br>수록곡을 들어볼 수 있는 웹사이트입니다.<br><br>각 밴드의 장르 별로 카테고리를 나누어 클릭시 해당 장르의 음악을 하는<br>밴드만 따로 볼 수 있게 했습니다.";
+		}
+
+		var decoes = document.getElementsByClassName("deco");
+
+		rave1.onmouseover = function(){
+			document.getElementById("webTitle").innerHTML = "Pokémon: Hoenn Player"
+			decoes[0].style.background = "#dddddd";
+			decoes[1].style.background = "black";
+			decoes[2].style.background = "black";
+			decoes[3].style.background = "black";
+		}
+		rave2.onmouseover = function(){
+			document.getElementById("webTitle").innerHTML = "Band eXperience Design<br>& Rock Bass Performances"
+			decoes[0].style.background = "black";
+			decoes[1].style.background = "#dddddd";
+			decoes[2].style.background = "black";
+			decoes[3].style.background = "black";
+		}
+		rave3.onmouseover = function(){
+			document.getElementById("webTitle").innerHTML = "MUSE: Simulation Theory<br>8th Album"
+			decoes[0].style.background = "black";
+			decoes[1].style.background = "black";
+			decoes[2].style.background = "#dddddd";
+			decoes[3].style.background = "black";
+		}
+		rave4.onmouseover = function(){
+			document.getElementById("webTitle").innerHTML = "K-ROCK Chart"
+			decoes[0].style.background = "black";
+			decoes[1].style.background = "black";
+			decoes[2].style.background = "black";
+			decoes[3].style.background = "#dddddd";
+		}
+
+		function toggler(){
+			if(toggle == "on"){
+				webHead.style.display = "none";
+			}else if(toggle == "off"){
+				webHead.style.display = "block";
+				for (var i=0;i<decoes.length;i++){
+					decoes[i].style.background = "black";
+				}
+			}
+		}
+
+	</script>
+</body>
+</html>
